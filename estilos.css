@@ -1,0 +1,310 @@
+
+
+/* ===================================
+   1. DISEÑO GENERAL DE LA PÁGINA
+=================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf8;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ===================================
+   2. ENCABEZADO
+=================================== */
+
+header {
+    background-color: #713f53;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+/* ===================================
+   3. MENÚ DE NAVEGACIÓN
+=================================== */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffd6e2;
+}
+
+/* ===================================
+   4. PÁGINA DE INICIO
+=================================== */
+
+#inicio {
+    background-color: #f7e4e8;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+#inicio h2 {
+    font-size: 32px;
+    color: #713f53;
+}
+
+#inicio p {
+    font-size: 18px;
+}
+
+/* ===================================
+   5. DISEÑO DE LOS BOTONES
+=================================== */
+
+.boton {
+    display: inline-block;
+    background-color: #713f53;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #a35c79;
+}
+
+/* ===================================
+   6. SECCIONES DE LA TIENDA
+=================================== */
+
+section {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    color: #713f53;
+    margin-bottom: 25px;
+}
+
+/* ===================================
+   7. CATÁLOGO DE PRODUCTOS
+=================================== */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Diseño individual del producto */
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ead6de;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #00000012;
+}
+
+/* Imagen del producto */
+
+.imagen-producto {
+    background-color: #f9e8ed;
+    font-size: 65px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: #713f53;
+}
+
+/* Precio del producto */
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a35c79;
+}
+
+/* ===================================
+   8. SECCIÓN CONTÁCTANOS
+=================================== */
+
+#contacto {
+    background-color: #f7e4e8;
+}
+
+.datos-contacto {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.datos-contacto p {
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+/* Enlaces de WhatsApp y correo */
+
+.datos-contacto a {
+    color: #713f53;
+    text-decoration: none;
+}
+
+.datos-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* ===================================
+   9. FORMULARIO DE PEDIDO
+=================================== */
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ead6de;
+}
+
+/* Textos de cada campo */
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Campos para ingresar información */
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Efecto al seleccionar un campo */
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #a35c79;
+    outline: 2px solid #f7e4e8;
+}
+
+/* Botón enviar */
+
+.formulario button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* ===================================
+   10. PIE DE PÁGINA
+=================================== */
+
+footer {
+    background-color: #713f53;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===================================
+   11. DISEÑO RESPONSIVE PARA TABLETS
+=================================== */
+
+@media (max-width: 768px) {
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #inicio h2 {
+        font-size: 26px;
+    }
+
+}
+
+/* ===================================
+   12. DISEÑO RESPONSIVE PARA CELULARES
+=================================== */
+
+@media (max-width: 550px) {
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 6px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    #inicio h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+.imagen-producto {
+    background-color: #f9e8ed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
