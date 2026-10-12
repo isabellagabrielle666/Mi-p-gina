@@ -1,8 +1,4 @@
-
-
-/* ===================================
-   1. DISEÑO GENERAL DE LA PÁGINA
-=================================== */
+/* DISEÑO DE LA PÁGINA */
 
 * {
     box-sizing: border-box;
@@ -19,9 +15,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* ===================================
-   2. ENCABEZADO
-=================================== */
+/* ENCABEZADO */
 
 header {
     background-color: #713f53;
@@ -35,9 +29,7 @@ header h1 {
     text-align: center;
 }
 
-/* ===================================
-   3. MENÚ DE NAVEGACIÓN
-=================================== */
+/* MENÚ DE NAVEGACIÓN */
 
 nav a {
     color: white;
@@ -51,9 +43,7 @@ nav a:hover {
     color: #ffd6e2;
 }
 
-/* ===================================
-   4. PÁGINA DE INICIO
-=================================== */
+/* PÁGINA DE INICIO */
 
 #inicio {
     background-color: #f7e4e8;
@@ -70,13 +60,11 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* ===================================
-   5. DISEÑO DE LOS BOTONES
-=================================== */
+/* DISEÑO DE LOS BOTONES */
 
 .boton {
     display: inline-block;
-    background-color: #713f53;
+    background-color: #e28cae;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -88,12 +76,10 @@ nav a:hover {
 }
 
 .boton:hover {
-    background-color: #a35c79;
+    background-color: #e7aec6;
 }
 
-/* ===================================
-   6. SECCIONES DE LA TIENDA
-=================================== */
+/* SECCIONES DE LA TIENDA */
 
 section {
     padding: 45px 20px;
@@ -106,9 +92,7 @@ section h2 {
     margin-bottom: 25px;
 }
 
-/* ===================================
-   7. CATÁLOGO DE PRODUCTOS
-=================================== */
+/* CATÁLOGO DE PRODUCTOS */
 
 .productos {
     display: grid;
@@ -118,7 +102,7 @@ section h2 {
     margin: auto;
 }
 
-/* Diseño individual del producto */
+/* DISEÑO PRODUCTO */
 
 .producto {
     background-color: white;
@@ -129,7 +113,7 @@ section h2 {
     box-shadow: 0 3px 8px #00000012;
 }
 
-/* Imagen del producto */
+/* IMAGEN */
 
 .imagen-producto {
     background-color: #f9e8ed;
@@ -142,7 +126,7 @@ section h2 {
     color: #713f53;
 }
 
-/* Precio del producto */
+/* PRECIO */
 
 .precio {
     font-size: 20px;
@@ -150,9 +134,7 @@ section h2 {
     color: #a35c79;
 }
 
-/* ===================================
-   8. SECCIÓN CONTÁCTANOS
-=================================== */
+/* SECCIÓN CONTÁCTANOS */
 
 #contacto {
     background-color: #f7e4e8;
@@ -172,7 +154,7 @@ section h2 {
     font-size: 17px;
 }
 
-/* Enlaces de WhatsApp y correo */
+/* ENLACES */
 
 .datos-contacto a {
     color: #713f53;
@@ -183,9 +165,7 @@ section h2 {
     text-decoration: underline;
 }
 
-/* ===================================
-   9. FORMULARIO DE PEDIDO
-=================================== */
+/* FORMULARIO */
 
 .formulario {
     max-width: 600px;
@@ -196,7 +176,7 @@ section h2 {
     border: 1px solid #ead6de;
 }
 
-/* Textos de cada campo */
+/* TEXTOS */
 
 .formulario label {
     display: block;
@@ -206,7 +186,7 @@ section h2 {
     text-align: left;
 }
 
-/* Campos para ingresar información */
+/* CAMPOS */
 
 .formulario input,
 .formulario select {
@@ -217,7 +197,7 @@ section h2 {
     font-size: 15px;
 }
 
-/* Efecto al seleccionar un campo */
+/* EFECTO */
 
 .formulario input:focus,
 .formulario select:focus {
@@ -225,16 +205,14 @@ section h2 {
     outline: 2px solid #f7e4e8;
 }
 
-/* Botón enviar */
+/* BOTON ENVIAR */
 
 .formulario button {
     width: 100%;
     margin-top: 25px;
 }
 
-/* ===================================
-   10. PIE DE PÁGINA
-=================================== */
+/* PIE DE PÁGINA */
 
 footer {
     background-color: #713f53;
@@ -243,9 +221,7 @@ footer {
     padding: 20px;
 }
 
-/* ===================================
-   11. DISEÑO RESPONSIVE PARA TABLETS
-=================================== */
+/* RESPONSIVE PARA TABLETS */
 
 @media (max-width: 768px) {
 
@@ -259,11 +235,9 @@ footer {
 
 }
 
-/* ===================================
-   12. DISEÑO RESPONSIVE PARA CELULARES
-=================================== */
+/* RESPONSIVE PARA CELULARES */
 
-@media (max-width: 550px) {
+@media (max-width: 480px) {
 
     .productos {
         grid-template-columns: 1fr;
